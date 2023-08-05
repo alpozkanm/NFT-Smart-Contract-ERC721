@@ -11,12 +11,16 @@ contract AlpToken is ERC721, ERC721Enumerable, ERC721URIStorage {
 
     Counters.Counter private _tokenIdCounter;
     uint256 MAX_SUPPLY = 10000;
+    uint256 USER_LIMIT = 1;
+    mapping (address => uint) public maxWalletMints;
 
     constructor() ERC721("AlpToken", "ALP") {}
 
     function safeMint(address to, string memory uri) public  {
         uint256 tokenId = _tokenIdCounter.current();
-        require(tokenId <= MAX_SUPPLY, "I'm sorry all NFTs have been minted");
+        require(tokenId <= MAX_SUPPLY, "I'm sorry all NFTs have been minted.");
+        require(maxWalletMints[to] < USER_LIMIT, "Max NFTs per wallet and user reached.");
+        maxWalletMints[to]+=1;
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);

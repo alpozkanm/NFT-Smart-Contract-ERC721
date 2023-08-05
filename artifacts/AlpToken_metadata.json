@@ -198,6 +198,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "maxWalletMints",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -662,11 +681,11 @@
 			]
 		},
 		"contract-dc69adb133.sol": {
-			"keccak256": "0x4afea5c2bdd76e2093654849656e034bf1ba87ff1887585983dc84ef3195bf11",
+			"keccak256": "0x5539c5ba1ec8b31e375976b3b6ab57738892a8f9e9dc71a3b43a6059e0c70f43",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7f7fa53987e8b2ee515b5eaaeb2f1ed0ce658cf85bf986ad992fbc37934d7fe0",
-				"dweb:/ipfs/Qmeuo21Lba5E9L438zzE35CdNCiL9RxHqybdyomYAA9MLt"
+				"bzz-raw://327632d96b71f0bd17c456c010e711b0b3a131737cc3b05b1278753e22320629",
+				"dweb:/ipfs/QmThXb24FHt1pM3B755UFmgsS1STiq8udA59VST5BCoSCQ"
 			]
 		}
 	},
