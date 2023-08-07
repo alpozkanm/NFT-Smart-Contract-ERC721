@@ -10,6 +10,8 @@ node_modules
 *.deps/
 .DS_Store
 /.deps
+artifacts/
+artifacts
 /artifacts
 
 ### Solidity ###
